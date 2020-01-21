@@ -20,29 +20,31 @@
   
 ## Dataset  
 
-*Table 1.  *
-![Data Augmentation](reports/images/data_augmentation.png)
+*Table 1. Spatial resolution (in mm cube) across the full dataset —subset of the* [2018 Internet Brain Segmentation Repository (IBSR) Challenge](https://www.nitrc.org/projects/ibsr) 
+![Dataset](reports/images/dataset.png)
    
      
 ## Patch Extraction/Multi-Scale Input  
 
-![Multi-Scale Input](reports/images/multi-scale_io.png)*Figure 1.  * 
+![Patch](reports/images/patch.png)*Figure 1.  [left-to-right] 32, 64, 96, 112 cube patches (resized to the same scale for display), each
+offering a different receptive field and degree of contextual information to its subsequent CNN.* 
 
     
 ## Loss Function 
 
-![Feature Maps](reports/images/imgnet_efn.png)*Figure 2.  *  
+![Loss Function](reports/images/loss.png)*Figure 2.  Training (a-d) and validation (e-h) moving-average curves monitoring the Dice
+Coefficient of predictions for a residual 3D U-Net model with different loss functions, but otherwise identical hyperparameters (patch size 64 cube, mini-batch size 8, cyclic learning rate between 5e-05−2.5e-04). While soft dice loss alone demonstrates the weakest performance, when combined with softmax cross-entropy, it matches and outperforms the latter alone (particularly for CSF).*  
  
 
 ## Effect of Preprocessing 
 
-*Table 2.  *
-![Results](reports/images/results.png) 
+*Table 2.  : Performance (in Dice Coefficient) on validation subset using a residual 3D FCN model with/without preprocessed data, but otherwise identical loss functions and hyperparameters (patch size 64 cube, mini-batch size 8, cyclic learning rate between 5e-05−2.5e-04).*
+![Preprocessing](reports/images/preprocess_results.png) 
 
 
 ## Model Performance  
 
-*Table 3.  *
-![GradCAM](reports/images/gradcam.png)
+*Table 3.  Performance (in Dice Coefficient) on validation subset using candidate CNNs and their collective ensemble, with varying input patch sizes, training schemes and hyperparameters. The highest Dice Coefficient achieved for each class of a given scan among member models, are marked in bold. Additionally, the best mean Dice Coefficient for each scan are marked in bold.*
+![Performance](reports/images/model_results.png)
 
 
