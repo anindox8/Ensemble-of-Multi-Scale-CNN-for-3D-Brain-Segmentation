@@ -2,7 +2,7 @@
 
 **Problem Statement**: Fully supervised, multi-class 3D brain segmentation in T1 MRI. 
 
-**Note**: The following approach won __ place in the **2019 Medical Image Segmentation and Applications: Brain Tissue Segmentation Challenge** at [Universitat de Girona](https://www.udg.edu) scoring **2nd place with Dice Coefficient: 0.932 [CSF: 0.906, GM: 0.947, WM: 0.945] and Hausdorff Distance (mm): 10.306 [CSF: 15.909, GM: 7.620, WM: 7.387] at test-time**, during the 2018-20 Joint Master of Science in [Medical Imaging and Applications (MaIA)](https://maiamaster.udg.edu) program.  
+**Note**: The following approach won __ place in the **2019 Medical Image Segmentation and Applications: Brain Tissue Segmentation Challenge** at [Universitat de Girona](https://www.udg.edu) scoring **1st place with Dice Coefficient: 0.932 [CSF: 0.906, GM: 0.947, WM: 0.945] and Hausdorff Distance (mm): 10.306 [CSF: 15.909, GM: 7.620, WM: 7.387] at test-time**, during the 2018-20 Joint Master of Science in [Medical Imaging and Applications (MaIA)](https://maiamaster.udg.edu) program.  
 
 **Acknowledgments**: DLTK for the TensorFlow.Estimator implementation of [3D U-Net, 3D FCN and DeepMedic](https://github.com/DLTK/models) model architectures and NiftyNet for the  TensorFlow implementation of [Cross-Entropy and Dice Loss](https://github.com/NifTK/NiftyNet/blob/dev/niftynet/layer/loss_segmentation.py).
  
